@@ -25,6 +25,7 @@ body{
     margin: -6px 0 0 ;
     background-repeat: no-repeat, repeat;
     background-size: cover;
+    z-index: 1;
 }
 #carousal{
     position: absolute;
@@ -42,9 +43,9 @@ body{
 }
 #container{
     width: 100%;
-    margin-top: 5px;
-    height: 5000px; 
-    border: 1px solid black;
+    margin-top: -5px;
+    /* height: 5000px;  */
+    /* border: 1px solid black; */
 }
 
 .imgNav{
