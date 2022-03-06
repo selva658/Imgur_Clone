@@ -30,3 +30,13 @@
   padding-top: 10px;
   padding-bottom: 40px;
 }
+
+.left,.middle,.right{
+   margin-left: 5%;
+}
+.sleft{
+  margin-left: 0;
+}
+.sright{
+  margin-left: 5%;
+}

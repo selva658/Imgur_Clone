@@ -2,13 +2,28 @@ let appen = (arr) => {
   arr.map((e) => {
     console.log(e);
     let content_Div = document.createElement("div");
+
     let imgs = document.createElement("img");
     imgs.setAttribute("src", e.src.original);
 
     let p = document.createElement("p");
     p.textContent = e.alt;
 
-    content_Div.append(imgs, p);
+    let span = document.createElement("span")
+    span.textContent = "🡹 150 🡻"
+    span.setAttribute("class","sleft")
+    
+    let span1 = document.createElement("span")
+    span1.setAttribute("class", "sright")
+    span1.textContent = `💬${Math.floor(Math.random() * 10)}`
+
+    let span2 = document.createElement("span")
+    span2.setAttribute("class", "sright")
+    span2.textContent = `👁️‍🗨️${Math.floor(Math.random() * 10)}k`
+
+
+  
+    content_Div.append(imgs, p,span,span1,span2);
     document.querySelector(".section2").append(content_Div);
   });
 };
@@ -21,11 +36,12 @@ async function imgur() {
       headers: {
         Accept: "application/json",
         Authorization:
-          "563492ad6f917000010000016528779b5826413e81ae5ef27ec5e7c5",
+          "563492ad6f91700001000001edb3647acc49449e8f2d2064f2957de9",
       },
     }
   );
   let data = await images.json();
+  console.log(data)
   appen(data.photos);
 }
 
