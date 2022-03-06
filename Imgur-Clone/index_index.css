@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-auto-rows: minmax(min-content, max-content);
-  grid-gap: 10px;
+  grid-gap: 15px;
   margin: 0 10%;
   /* float: left; */
  
@@ -21,8 +21,9 @@
   /* border: 0.5px solid #646568; */
 }
 .section2 img{
-  height: 50vh;
+  height: 45vh;
   width: 100%;
+  border-radius: 5px;
 }
 #sbody{
   background-color: #2e3035;
