@@ -36,7 +36,7 @@ async function imgur() {
       headers: {
         Accept: "application/json",
         Authorization:
-          "563492ad6f91700001000001edb3647acc49449e8f2d2064f2957de9",
+          "563492ad6f9170000100000133595104e05c43158e8ab70fef6f6574",
       },
     }
   );
